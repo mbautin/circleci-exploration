@@ -4,7 +4,9 @@
 version: 2
 jobs:
   build:
-    machine: large  
+    # https://circleci.com/docs/2.0/configuration-reference/
+    machine: true
+    resource_class: large
     steps:
       - checkout
 
